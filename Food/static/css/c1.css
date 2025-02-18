@@ -4,10 +4,11 @@ h1 {
 }
 body {
   /* background-color: #315fb6; */
-  background-image: url("../images/testy.jpg");
+  background-image: url("../images/Food6.jpg");
   background-size: cover;
   display: grid;
   place-items: center;
+  background-repeat:no-repeat;
 }
 div {
   height: 90vh;
