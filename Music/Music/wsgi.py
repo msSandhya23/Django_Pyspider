@@ -1,5 +1,5 @@
 """
-WSGI config for Food_Love project.
+WSGI config for Music project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Food_Love.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Music.settings")
 
 application = get_wsgi_application()
