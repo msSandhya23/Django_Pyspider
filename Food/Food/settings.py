@@ -11,18 +11,19 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATE_DIR=os.path.join(BASE_DIR,'templates')
 
-STATIC_DIR=os.path.join(BASE_DIR,'static')
+import os
+TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-fcxtlv-ih-6e51kjz^ivi&9yazwb8x3=@f!0be1!eormlaj)s_"
+SECRET_KEY = "django-insecure-m2)(t!z+zaqbl*#ir%_sl(@$5wofq7_yyxazcc@%aj#wm@)*wn"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -124,4 +125,4 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-STATICFILES_DIRS=[STATIC_DIR]
+STATICFILES_DIRS = [STATIC_DIR]
