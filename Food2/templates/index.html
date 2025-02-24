@@ -1,119 +1,555 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Hello, world!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/8a6dc0008d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Organic Food</title>
   </head>
   <body>
-
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#">Organic</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav m-auto my-2 my-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active"href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TRENDING</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >
-                  Store
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Organic</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class=" px
-              -2 search" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn0" type="submit">Search</button>
-            </form>
+      <div class="container">
+        <a class="navbar-brand" href="#">Organic</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i class="fa-solid fa-burger"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav m-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TRENDING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Store </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Organic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="px-2 search"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-7 pt-5 text-center">
+            <h1 class="pt-5">Nature Has Always Cared For Us !</h1>
+            <button class="btn1 mt-3">More Tips</button>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
 
-      <section class="main">
-        <div class="container py-5">
-            <div class="row py-5">
-                <div class="col-lg-7 pt-5 text-center">
-                    <h1 class="pt-5">Nature Has Always Cared For Us !</h1>
-                    <button class="btn1 mt-3">More Tips</button>
-                </div>
+    <section class="new">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div
+              class="row d-flex justify-content-center align-items-center text-center"
+            >
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <img
+                  src="../static/images/trees.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h6>NATURAL</h6>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <img
+                  src="../static/images/grapes.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h6>NATURAL</h6>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <img
+                  src="../static/images/banana.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <h6>NATURAL</h6>
+              </div>
             </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="new">
-        <div class="container py-5">
-            <div class="row pt-5">
-                <div class="col-lg-7 m-auto">
-                    <div class="row text-center">
-                        <div class="col-lg-4">
-                            <img src="../static/images/tree.jpg" class="img-fluid" alt="">
-                            <h6>NATURAL</h6>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="../static/images/grapes.png" class="img-fluid" alt="">
-                            <h6>NATURAL</h6>
-                        </div>
-                        <div class="col-lg-4">
-                            <img src="../static/images/banana.png" class="img-fluid" alt="">
-                            <h6>NATURAL</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="product">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-5 m-auto text-center">
+            <h1>What's Trending</h1>
+            <h6 style="color: red">Be Healthy Organic Food</h6>
+          </div>
         </div>
-      </section>
-
-
-      <section class="product">
-        <div class="container py-5">
-            <div class="row py-5 ">
-                <div class="col-log-5 m-auto text-center">
-                    <h1>What's Trending</h1>
-                    <h6 style="color: red;">Be Healthy Organic Food</h6>
-                </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="card-img"
+                  alt=""
+                />
+              </div>
+              <div
+                class="card-footer bg-light d-flex justify-content-between align-items-center"
+              >
+                <h6>Energy Food</h6>
+                <h6 class="fw-bold">$39.99</h6>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="card-img"
+                  alt=""
+                />
+              </div>
+              <div
+                class="card-footer bg-light d-flex justify-content-between align-items-center"
+              >
+                <h6>Energy Food</h6>
+                <h6 class="fw-bold">$39.99</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="card-img"
+                  alt=""
+                />
+              </div>
+              <div
+                class="card-footer bg-light d-flex justify-content-between align-items-center"
+              >
+                <h6>Energy Food</h6>
+                <h6 class="fw-bold">$39.99</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body d-flex justify-content-center">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="card-img"
+                  alt=""
+                />
+              </div>
+              <div
+                class="card-footer bg-light d-flex justify-content-between align-items-center"
+              >
+                <h6>Energy Food</h6>
+                <h6 class="fw-bold">$39.99</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 text-center m-auto">
+            <button class="btn1">Click For More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-8 m-auto text-center">
+            <h1>Welcome To Our Organic Food Socity</h1>
+            <h6 style="color: red">Be Healthy Organic Food</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 text-lg-start text-md-center"
+          >
+            <img
+              src="../static/images/Women.jpg"
+              class="img-fluid mb-3"
+              alt=""
+            />
+            <h5>Best Quality Produst</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Dicta nam magnam assumenda culpa, dignissimos saepe,<br />
+              in expedita quas est voluptatum velit vitae impedit <br />
+              repellendus iste dolore voluptates earum deserunt delectus?
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 text-lg-start text-md-center"
+          >
+            <img
+              src="../static/images/Women.jpg"
+              class="img-fluid mb-3"
+              alt=""
+            />
+            <h5>Best Quality Produst</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Dicta nam magnam assumenda culpa, dignissimos saepe,<br />
+              in expedita quas est voluptatum velit vitae impedit <br />
+              repellendus iste dolore voluptates earum deserunt delectus?
+            </p>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 text-lg-start text-md-center"
+          >
+            <img
+              src="../static/images/Women.jpg"
+              class="img-fluid mb-3"
+              alt=""
+            />
+            <h5>Best Quality Produst</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Dicta nam magnam assumenda culpa, dignissimos saepe,<br />
+              in expedita quas est voluptatum velit vitae impedit <br />
+              repellendus iste dolore voluptates earum deserunt delectus?
+            </p>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-lg-4 text-center m-auto">
+            <button class="btn1">Shop More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-8 m-auto text-center">
+            <h1>Explore Our Store</h1>
+            <h6 style="color: red">Pick Your Product From Our Store</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card border-0 bg-light mb-2">
+              <div class="card-body">
+                <img
+                  src="../static/images/energyfood.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h6>Energy Food</h6>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 text-center m-auto">
+            <button class="btn1">Click For More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-8 m-auto text-center">
+            <h1>Welcome To Our Organic Food Socity</h1>
+            <h6 style="color: red">Be Healthy Organic Food</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apple py-5">
+      <div class="container text-white py-5">
+        <div class="row py-5">
+          <div class="col-lg-6">
+            <h1 class="font-weight-bold py-3">
+              Unlock Your Potential With Good Nutrition
+            </h1>
+            <h6 style="color: red">Be Healthy Organic Food</h6>
+            <button class="btn1 mt-3">More From Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact py-3 my-3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-5 m-auto text-center">
+            <h1>Contact Us</h1>
+            <h6 style="color: red">Always Be In Touch With Us</h6>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-9 m-auto">
             <div class="row">
-                <div class="col-log-3">
-                    <div class="card border-0 bg-light mb-2 ">
-                        <div class="card-body">
-                            <img src="../static/images/energyfood.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <h6>Energy Food</h6>
-                    <p>$39.99</p>
-                </div>
-                <div class="col-log-3">
-                    <div class="card border-0 bg-light mb-2 ">
-                        <div class="card-body">
-                            <img src="../static/images/energyfood.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <h6>Energy Food</h6>
-                    <p>$39.99</p>
-                </div>
-            </div>
-        </div>
-      </section>
+              <div class="col-lg-4 col-md-6">
+                <h6>LOCATION</h6>
+                <p>New York 0911 First Street DC</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                <h6>PHONE</h6>
+                <p>03444-24359555</p>
+
+                <h6>EMAIL</h6>
+                <p>Gc7dP@example.com</p>
+              </div>
+              <div class="col-lg-7 col-md-6">
+                <div class="row gap-1">
+                  <div class="col-lg-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control input-box"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-lg-12 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control input-box"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 py-3">
+                    <textarea
+                      name=""
+                      class="form-control input-box"
+                      placeholder="Enter Your Name"
+                      id=""
+                      cols="10"
+                      rows="5"
+                      id=""
+                    ></textarea>
+                  </div>
+                </div>
+                <button class="btn1">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-9 m-auto text-center">
+            <h1>Join Our Secret Socity</h1>
+            <input type="text" class="px-3" placeholder="Enter Your Email" />
+            <button class="btn2">Submit</button>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-11 m-auto">
+            <div class="row">
+              <!-- *customer care section -->
+              <div class="col-lg-3 col-md-3 py-3">
+                <h5 class="pb-3">CUSTOMER CARE</h5>
+                <p>Regular</p>
+                <p>OnTime</p>
+                <p>Always Care</p>
+              </div>
+              <!-- *faq section -->
+              <div class="col-lg-3 col-md-3 py-3">
+                <h5 class="pb-3">FAQ's</h5>
+                <p>No E-Charges</p>
+                <p>Shopping & Delivery</p>
+                <p>Always Care</p>
+              </div>
+              <!-- *company section -->
+              <div class="col-lg-3 col-md-3 py-3">
+                <h5 class="pb-3">OUR COMPANY</h5>
+                <p>About</p>
+                <p>New Food</p>
+                <p>Product</p>
+              </div>
+              <!-- * social media -->
+              <div class="col-lg-3 col-md-3 py-3">
+                <h5 class="pb-3">SOCIAL MEDIA</h5>
+                <div class="icons d-flex gap-3">
+                  <span class="footer-icons"
+                    ><i
+                      class="fa-brands fa-facebook fa-xl"
+                      style="color: #1877f2"
+                    ></i
+                  ></span>
+                  <span class="footer-icons"
+                    ><i
+                      class="fa-brands fa-instagram fa-xl"
+                      style="color: #c13584"
+                    ></i
+                  ></span>
+                  <span class="footer-icons"
+                    ><i
+                      class="fa-brands fa-twitter fa-xl"
+                      style="color: #74c0fc"
+                    ></i
+                  ></span>
+                  <span class="footer-icons text-danger"
+                    ><i class="fa-brands fa-google-plus fa-xl"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">
+          &copy; Copyright 2021 All rights reserved | This template is made with
+          ❣️ by Sandhya
+        </p>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
