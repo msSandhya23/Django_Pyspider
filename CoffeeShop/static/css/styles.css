@@ -229,7 +229,9 @@ html::-webkit-scrollbar {
 #product p span {
   float: right;
   cursor: pointer;
+  
 }
+
 #gallary {
   width: 100%;
 }
