@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="all-content">
-      <nav class="navbar navbar-expand-lg" id="navbar">
+      <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" id="logo"
             ><img src="{% static 'images/logo-c.png' %}" alt=""
@@ -44,7 +44,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -62,7 +64,7 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blogs</a>
+                <a class="nav-link" href="#blogs">Blogs</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -125,27 +127,412 @@
           <div class="row">
             <div class="col-md-4 py-3 py-md-0">
               <div class="card">
-                <img src="{% static 'images/c6.png
-                
-                
-                
-                
-                ..' %}" alt="">
+                <img src="{% static 'images/c6.png..' %}" alt="" />
               </div>
             </div>
             <div class="col-md-4 py-3 py-md-0">
               <div class="card">
-                <img src="{% static 'images/c2.jpg' %}" alt="">
+                <img src="{% static 'images/c2.jpg' %}" alt="" />
               </div>
             </div>
             <div class="col-md-4 py-3 py-md-0">
               <div class="card">
-                <img src="{% static 'images/c5.webp' %}" alt="">
+                <img src="{% static 'images/c5.webp' %}" alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="menu">
+        <div class="container">
+          <div class="heading3">Menu</div>
+        </div>
+        <div class="container" id="container2">
+          <div class="row">
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/cappuccino.jpg' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/ColdCoffee.jpg' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/Hot-chocolate.jpg' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/HotCoffee.jpg' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 30px">
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img
+                  src="{% static 'images/Nutella-Hot-Coffee.jpg' %}"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/nutella-recipes.jpg' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/HazelnutCoffee.png' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" py-3 py-md-0>
+              <div class="card">
+                <img src="{% static 'images/HomemadeCoffee.jpg' %}" alt="" />
+
+                <div class="card-body">
+                  <div class="star" text-center>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>Coffee</h3>
+                  <p>
+                    $99 <strike>$100</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="product">
+        <div class="container">
+          <div class="heading4">Product</div>
+        </div>
+        <div class="container" id="container3">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Arabic Coffee</h3>
+                  <p>
+                    $120 <strike>$150</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Arabic Coffee</h3>
+                  <p>
+                    $120 <strike>$150</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Arabic Coffee</h3>
+                  <p>
+                    $120 <strike>$150</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Arabic Coffee</h3>
+                  <p>
+                    $120 <strike>$150</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container" id="gallary">
+        <div class="heading5">Our <span>Gallary</span></div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="{% static 'images/c6.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="{% static 'images/c6.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="{% static 'images/c6.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="{% static 'images/c6.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="{% static 'images/c6.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="{% static 'images/c6.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="heading6">Contact <span>Us</span></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis soluta dicta <br />
+                sunt dignissimos reiciendis! Inventore itaque harum
+                necessitatibus esse consequatur.
+              </p>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                aria-label="default input example"
+              /><br />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="default input example"
+              /><br />
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Phone"
+                aria-label="default input example"
+              /><br />
+              <button id="contact-btn">Send Message</button>
+            </div>
+            <div class="col-md-5" id="col">
+              <h1>Info</h1>
+              <p><i class="fa-regular fa-envelope"></i>example@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>+91 123456789</p>
+              <p><i class="fa-solid fa-building-columns"></i>Odisha</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                laudantium a pariatur dolores iusto expedita?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blogs">
+        <div class="heading7">Latest <span>Blogs</span></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <h5>Admin / 2 March 2025</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro quibusdam voluptatem laudantium maxime modi dolorem!
+                  </p>
+                  <button id="blog-btn">Read More.</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <h5>Admin / 2 March 2025</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro quibusdam voluptatem laudantium maxime modi dolorem!
+                  </p>
+                  <button id="blog-btn">Read More.</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="{% static 'images/c6.png' %}" alt="" />
+                <div class="card-body">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <h5>Admin / 2 March 2025</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Porro quibusdam voluptatem laudantium maxime modi dolorem!
+                  </p>
+                  <button id="blog-btn">Read More.</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-logo text-center">
+          <img src="{% static 'images/coffee-shop1.png' %}" alt="logo-footer" />
+        </div>
+        <div class="social-links text-center">
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-brands fa-facebook-f"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-youtube"></i></span>
+          <span><i class="fa-brands fa-pinterest-p"></i></span>
+        </div>
+        <div class="credits text-center">
+          Dseigned by
+          <a href="https://github.com/msSandhya23" target="_blank">
+            <span>Sandhya💗</span></a
+          >
+        </div>
+        <div class="copyright text-center">
+          &copy; Copyright <strong> <span>Coffee Shop</span></strong
+          >. All Rights reserved
+        </div>
+      </footer>
+      <a href="#" class="arrow"
+        ><i
+          ><img
+            src="{% static 'images/up-arrow.png' %}"
+            alt=""
+            width="50px" /></i
+      ></a>
     </div>
 
     <script
