@@ -35,7 +35,7 @@ html::-webkit-scrollbar {
   margin-left: 50px;
 }
 .nav-item .nav-link {
-  color: black;
+  color: #252424;
   margin-left: 10px;
   font-weight: bold;
   transition: 0.5s;
@@ -48,7 +48,7 @@ html::-webkit-scrollbar {
   transition: 0.5s;
 }
 #navbar form button {
-  background: black;
+  background: #252424;
   color: white;
   border: 1px solid white;
 }
@@ -97,7 +97,7 @@ html::-webkit-scrollbar {
 .heading {
   text-align: center;
   margin-bottom: 50px;
-  color: black;
+  color: #252424;
   font-size: 30px;
   font-weight: bold;
 }
@@ -123,44 +123,293 @@ html::-webkit-scrollbar {
   background: #b2744c;
   color: white;
 }
-@media screen and (max-width: 982px){
-    #about p{
-        font-size: 8px;
-    }
-} 
-@media screen and (max-width: 766px){
-    #about p{
-        font-size: 15px;
-    }
-    #about{
-        height: 120vh;
-    }
-} 
+@media screen and (max-width: 982px) {
+  #about p {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 766px) {
+  #about p {
+    font-size: 15px;
+  }
+  #about {
+    height: 120vh;
+  }
+}
 #top-cards {
-    width: 100%;
-    height: 60vh;
-    background: #f7f5f2;
+  width: 100%;
+  /*height: 60vh;*/
+  background: #f7f5f2;
 }
-.heading2{
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+.heading2 {
+  color: #252424;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
-.heading2 span{
-    color: #b2744c;
+.heading2 span {
+  color: #b2744c;
 }
-#top-cards .container{
-    margin-top: 30px;
+#top-cards .container {
+  margin-top: 30px;
 }
 #top-cards .card {
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
 }
-#top-cards .card img{
-    border-radius: 10px;
+#top-cards .card img {
+  border-radius: 10px;
 }
-#top-cards .card:hover{
-    transform: translateY(-10px);
+#top-cards .card:hover {
+  transform: translateY(-10px);
+}
+#menu {
+  width: 100%;
+  margin-top: 60px;
+}
+.heading3 {
+  text-align: center;
+  font-size: 30px;
+  color: #b2744c;
+  font-weight: bold;
+  border-bottom: 2px solid #b2744c;
+}
+#container2 {
+  margin-top: 20px;
+}
+#menu .card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#menu .card img {
+  border-radius: 10px;
+  height: 200px;
+}
+.star i {
+  color: #b2744c;
+}
+#menu h3 {
+  text-align: center;
+  color: #b2744c;
+  margin-top: 10px;
+  font-size: 25px;
+}
+#menu p {
+  font-size: 16px;
+  color: #b2744c;
+  padding-top: 10px;
+}
+#menu p span {
+  float: right;
+  cursor: pointer;
+}
+#product {
+  width: 100%;
+}
+.heading4 {
+  text-align: center;
+  color: #b2744c;
+  font-size: 30px;
+  padding-top: 100px;
+  font-weight: bold;
+  border-bottom: 2px solid #b2744c;
+}
+#container3 {
+  margin-top: 30px;
+}
+#product h3 {
+  text-align: center;
+  color: #b2744c;
+  font-size: 23px;
+}
+#product p {
+  color: #b2744c;
+  padding-top: 10px;
+}
+#product p span {
+  float: right;
+  cursor: pointer;
+}
+#gallary {
+  width: 100%;
+}
+.heading5 {
+  text-align: center;
+  color: #252424;
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#gallary .heading5 span {
+  color: #b2744c;
+}
+#gallary .card {
+  border-radius: 10px;
+  cursor: pointer;
+}
+#gallary .card img {
+  border-radius: 10px;
+}
+#contact {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+}
+#contact .container {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(90deg, white 80%, #b2744c 20%);
+  border-radius: 10px;
+}
+.heading6 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+#heading6 span {
+  color: #b2744c;
+}
+#contact p {
+  font-weight: bold;
+  font-size: 13px;
+  color: #252424;
+}
+#contact input {
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid #b2744c;
+}
+#contact-btn {
+  width: 200px;
+  height: 36px;
+  border: none;
+  background: #b2744c;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#col {
+  width: 40%;
+  height: 56vh;
+  background: #252424;
+  margin-top: 78px;
+}
+#contact h1 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#contact #col p {
+  font-size: 15px;
+  color: white;
+  margin-left: 13px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 766px) {
+  #contact .container {
+    background: white;
+  }
+  #col {
+    width: 100%;
+    background: #b2744c;
+  }
+  #contact {
+    height: 150vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  #contact input {
+    width: 250px;
+  }
+}
+#blogs {
+  width: 100%;
+}
+#blogs .heading7 {
+  text-align: center;
+  font-size: 30px;
+  color: #252424;
+  font-weight: bold;
+}
+#blogs .heading7 span {
+  color: #b2744c;
+}
+#blogs .container {
+  margin-top: 60px;
+}
+#blogs h5 {
+  color: #b2744c;
+}
+#blog-btn {
+  width: 200px;
+  height: 36px;
+  border: none;
+  color: white;
+  background: #b2744c;
+  cursor: pointer;
+}
+#footer {
+  width: 100%;
+  background: #b2744c;
+  margin-top: 50px;
+}
+
+.footer-logo img {
+  background-color: #fff;
+  padding: 5px 15px;
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.social-links {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-links span {
+  font-size: 17px;
+  padding: 10px;
+  background: #252424;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+.credits {
+  color: white;
+  margin-top: 20px;
+  text-shadow: 0px 0px 1px #252424;
+}
+.credits a {
+  text-decoration: none;
+  color: #252424;
+  font-weight: bold;
+}
+.credits a:hover {
+  color: #202020;
+}
+#credits a span {
+  color: #252424;
+}
+.copyright span {
+  color: #252424;
+}
+html {
+  scroll-behavior: smooth;
+}
+.arrow {
+  position: fixed;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-align: center;
+  line-height: 50px;
 }
