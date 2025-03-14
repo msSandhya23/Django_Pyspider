@@ -18,6 +18,9 @@ from django.urls import path
 from app.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("display_topics/",display_topics,name='display_topics'),
+    path("display_webpages/",display_webpages,name='display_webpages'),
+    path("display_AccessRecord/",display_AccessRecord, name="display_AccessRecord"),
     path("insert_topic/",insert_topic,name='insert_topic'),
     path("insert_webpage/",insert_webpage,name='insert_webpage'),
     path("insert_AccessRecord/",insert_AccessRecord,name='insert_AccessRecord')
