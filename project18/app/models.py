@@ -9,7 +9,7 @@ class Topic(models.Model):
     
 class Webpage(models.Model):
     topic_name = models.ForeignKey(Topic, on_delete=models.CASCADE)
-    name = models.CharField(max_length=264, unique=True)
+    name = models.CharField(max_length=264)
     url = models.URLField()
     email = models.EmailField(max_length=264,default='hai@gmail.com')
     

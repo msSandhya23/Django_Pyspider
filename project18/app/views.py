@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from app.models import *
 from django.http import HttpResponse
+from django.db.models.functions import Length
+from django.db.models import Q
 # Create your views here.
 def display_topics(request):
     QTTO = Topic.objects.all()
@@ -9,11 +11,32 @@ def display_topics(request):
 
 def display_webpages(request):
     QLWO = Webpage.objects.all()
+    #QLWO =Webpage.objects.filter(topic_name="Vollyball")
+    QLWO = Webpage.objects.filter(topic_name__topic_name="Vollyball")
+    QLWO = Webpage.objects.exclude(topic_name__topic_name="Vollyball")
+    QLWO = Webpage.objects.all()[0:3:1]
+    QLWO = Webpage.objects.all()[::-1]
+    QLWO = Webpage.objects.all().order_by('name')
+    QLWO = Webpage.objects.all().order_by('-name')
+    QLWO = Webpage.objects.all()
+    QLWO = Webpage.objects.filter(url__endswith='com')
+    QLWO = Webpage.objects.filter(url__startswith='https')
+    QLWO = Webpage.objects.filter(name__contains='m')
+    QLWO = Webpage.objects.filter(url__in=['https://www.google.com','https://www.facebook.com'])
+    QLWO = Webpage.objects.all()
+    QLWO = Webpage.objects.filter(name__regex='MSD')
+    QLWO = Webpage.objects.all()
+    QLWO = Webpage.objects.filter(pk__gt=2)
+    QLWO = Webpage.objects.filter(pk__lt=3)
+    QLWO = Webpage.objects.filter(pk__gte=4)
+    QLWO = Webpage.objects.filter(pk__lte=3)
+    
     d1 = {'QLWO':QLWO}
     return render(request,'display_webpages.html',d1)
 
 def display_AccessRecord(request):
     QLAR = AccessRecord.objects.all()
+    QLAR = AccessRecord.objects.filter(date__year=2022)
     d2 = {'QLAR':QLAR}
     return render(request,'display_AccessRecord.html',d2)
 def insert_topic(request):
