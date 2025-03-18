@@ -30,13 +30,16 @@ def display_webpages(request):
     QLWO = Webpage.objects.filter(pk__lt=3)
     QLWO = Webpage.objects.filter(pk__gte=4)
     QLWO = Webpage.objects.filter(pk__lte=3)
-    
+    QLWO = Webpage.objects.all()
+    QLWO = Webpage.objects.filter(Q(name__startswith='m')|Q(name__startswith='s'))
+    QLWO = Webpage.objects.filter(Q(name__startswith='m')|Q(name__endswith='s'))
     d1 = {'QLWO':QLWO}
     return render(request,'display_webpages.html',d1)
 
 def display_AccessRecord(request):
     QLAR = AccessRecord.objects.all()
     QLAR = AccessRecord.objects.filter(date__year=2022)
+    QLAR = AccessRecord.objects.filter(date__day = 19)
     d2 = {'QLAR':QLAR}
     return render(request,'display_AccessRecord.html',d2)
 def insert_topic(request):
