@@ -20,4 +20,5 @@ from app.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("insert_emp/",insert_emp,name = "insert_emp"),
+    path("empToDeptJoin/",empToDeptJoin,name = "empToDeptJoin"),
 ]

@@ -25,6 +25,9 @@ def insert_emp(request):
         return HttpResponse('Employee added successfully')
     else:
         return HttpResponse('Employee already exists')
-    
-    
+
+def empToDeptJoin(request):
+    QLEDO = Emp.objects.all().select_related('deptno')
+    d = {'QLEDO':QLEDO}
+    return render(request,'empToDeptJoin.html',d)  
     
