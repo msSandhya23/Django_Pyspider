@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>EmpToDeptAndMgr Data</h1>
+        <table border="3px">
+            <tr>
+                <th>empno</th>
+                <th>ename</th>
+                <th>job</th>
+                <th>mgr</th>
+                <th>hiredate</th>
+                <th>sal</th>
+                <th>comm</th>
+                <th>deptno</th>
+
+                <th>mgrno</th>
+                <th>mgrname</th>
+                <th>mgrjob</th>
+                <th>mgrhiredate</th>
+                <th>mgrsal</th>
+                <th>mgrcomm</th>
+                <th>mgrdeptno</th>
+
+                <th>deptname</th>
+                <th>deptno</th>
+                <th>loc</th>
+            </tr>
+            {% for edo in QLEDMO %}
+            <tr>
+                <td>{{edo.empno}}</td>
+                <td>{{edo.ename}}</td>
+                <td>{{edo.job}}</td>
+                <td>{{edo.mgr}}</td>
+                <td>{{edo.hiredate}}</td>
+                <td>{{edo.sal}}</td>
+                <td>{{edo.comm}}</td>
+                <td>{{edo.deptno.deptno}}</td>
+
+                <td>{{edo.mgr.empno}}</td>
+                <td>{{edo.mgr.ename}}</td>
+                <td>{{edo.mgr.job}}</td>
+                <td>{{edo.mgr.hiredate}}</td>
+                <td>{{edo.mgr.sal}}</td>
+                <td>{{edo.mgr.comm}}</td>
+                <td>{{edo.mgr.deptno.deptno}}</td>
+
+                <td>{{edo.deptno.dname}}</td>
+                <td>{{edo.deptno.deptno}}</td>
+                <td>{{edo.deptno.loc}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

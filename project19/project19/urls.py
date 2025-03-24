@@ -22,4 +22,5 @@ urlpatterns = [
     path("insert_emp/",insert_emp,name = "insert_emp"),
     path("empToDeptJoin/",empToDeptJoin,name = "empToDeptJoin"),
     path("EmpToMgr/",EmpToMgr,name = "EmpToMgr"),
+    path("EmpToDeptAndMgr/",EmpToDeptAndMgr,name = "EmpToDeptAndMgr"),
 ]
