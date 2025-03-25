@@ -129,3 +129,8 @@ def EmpToDeptAndMgr(request):
     
     d = {'QLEDMO':QLEDMO}
     return render(request,'EmpToDeptAndMgr.html',d)
+
+def EmpToDeptByPR(request):
+    QLDO = Dept.objects.all().prefetch_related('emp_set')
+    d = {'QLDO':QLDO}
+    return render(request,'EmpToDeptByPR.html',d)

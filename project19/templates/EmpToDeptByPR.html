@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for DO in QLDO %}
+        <h1>{{DO.dname}}</h1>
+        {% for eo in DO.emp_set.all %}
+            <h6>{{eo.ename}}</h6>
+            <h6>{{eo.job}}</h6>
+            <h6>{{eo.mgrno}}</h6>
+            <h6>{{eo.hiredate}}</h6>
+            <h6>{{eo.sal}}</h6>
+            <h6>{{eo.comm}}</h6>
+            <h6>{{eo.deptno}}</h6>
+        {% endfor %}
+    {% endfor %}
+    {% for DO in QLDO %}
+        <h1>{{DO.deptno}}</h1>
+        {% for eo in DO.emp_set.all %}
+            <h6>{{eo.empno}}</h6>
+            <h6>{{eo.ename}}</h6>
+            <h6>{{eo.job}}</h6>
+            <h6>{{eo.mgrno}}</h6>
+            <h6>{{eo.hiredate}}</h6>
+            <h6>{{eo.sal}}</h6>
+            <h6>{{eo.comm}}</h6>
+            <h6>{{eo.deptno}}</h6>
+        {% endfor %}
+    {% endfor %}
+    {% for DO in QLDO %}
+        <h1>{{DO.loc}}</h1>
+        {% for eo in DO.emp_set.all %}
+            <h6>{{eo.ename}}</h6>
+            <h6>{{eo.job}}</h6>
+            <h6>{{eo.mgrno}}</h6>
+            <h6>{{eo.hiredate}}</h6>
+            <h6>{{eo.sal}}</h6>
+            <h6>{{eo.comm}}</h6>
+            <h6>{{eo.deptno}}</h6>
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
