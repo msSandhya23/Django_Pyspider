@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from app.models import *
 from django.http import HttpResponse
+from django.db.models import Prefetch
 # Create your views here.
 def insert_emp(request):
     eno = int(input('Enter employee number: '))
@@ -132,5 +133,7 @@ def EmpToDeptAndMgr(request):
 
 def EmpToDeptByPR(request):
     QLDO = Dept.objects.all().prefetch_related('emp_set')
+    QLDO = Dept.objects.prefetch_related('emp_set').filter(dname__startswith = 'S')
+    QLDO = Dept.objects.prefetch_related(Prefetch('emp_set', queryset=Emp.objects.filter(job = 'SALESMAN')))
     d = {'QLDO':QLDO}
     return render(request,'EmpToDeptByPR.html',d)

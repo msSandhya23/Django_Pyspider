@@ -7,16 +7,19 @@
 </head>
 <body>
     {% for DO in QLDO %}
+        {% if DO.emp_set.all %}
         <h1>{{DO.dname}}</h1>
-        {% for eo in DO.emp_set.all %}
-            <h6>{{eo.ename}}</h6>
-            <h6>{{eo.job}}</h6>
-            <h6>{{eo.mgrno}}</h6>
-            <h6>{{eo.hiredate}}</h6>
-            <h6>{{eo.sal}}</h6>
-            <h6>{{eo.comm}}</h6>
-            <h6>{{eo.deptno}}</h6>
-        {% endfor %}
+            {% for eo in DO.emp_set.all %}
+            <h4>{{eo.ename}}</h4>
+            <h4>{{eo.job}}</h4>
+            <h4>{{eo.mgrno}}</h4>
+            <h4>{{eo.hiredate}}</h4>
+            <h4>{{eo.sal}}</h4>
+            <h4>{{eo.comm}}</h4>
+            <h4>{{eo.deptno}}</h4>
+            -------------------------------------
+            {% endfor %}
+        {% endif %}
     {% endfor %}
     {% for DO in QLDO %}
         <h1>{{DO.deptno}}</h1>
@@ -29,6 +32,7 @@
             <h6>{{eo.sal}}</h6>
             <h6>{{eo.comm}}</h6>
             <h6>{{eo.deptno}}</h6>
+            -------------------------------
         {% endfor %}
     {% endfor %}
     {% for DO in QLDO %}
@@ -41,6 +45,7 @@
             <h6>{{eo.sal}}</h6>
             <h6>{{eo.comm}}</h6>
             <h6>{{eo.deptno}}</h6>
+            --------------------------------
         {% endfor %}
     {% endfor %}
 </body>
