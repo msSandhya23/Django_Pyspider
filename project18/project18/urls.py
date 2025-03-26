@@ -23,5 +23,6 @@ urlpatterns = [
     path("display_AccessRecord/",display_AccessRecord, name="display_AccessRecord"),
     path("insert_topic/",insert_topic,name='insert_topic'),
     path("insert_webpage/",insert_webpage,name='insert_webpage'),
-    path("insert_AccessRecord/",insert_AccessRecord,name='insert_AccessRecord')
+    path("insert_AccessRecord/",insert_AccessRecord,name='insert_AccessRecord'),
+    path("TopicToWebpageByPR/",TopicToWebpageByPR,name="TopicToWebpageByPR/")
 ]

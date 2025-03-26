@@ -3,6 +3,7 @@ from app.models import *
 from django.http import HttpResponse
 from django.db.models.functions import Length
 from django.db.models import Q
+from django.db.models import Prefetch
 # Create your views here.
 def display_topics(request):
     QTTO = Topic.objects.all()
@@ -75,3 +76,6 @@ def insert_AccessRecord(request):
     else:
         return HttpResponse(f'{pk} is not created')
     
+def TopicToWebpageByPR(request):
+    QLTWO = Webpage.objects.prefetch_related('topic_name').all()
+    return render(request,'TopicTowebpageByPR.html') 
