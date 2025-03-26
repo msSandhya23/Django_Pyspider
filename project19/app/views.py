@@ -2,6 +2,8 @@ from django.shortcuts import render
 from app.models import *
 from django.http import HttpResponse
 from django.db.models import Prefetch
+from django.db.models import Min,Max,Avg,Count,Sum
+from django.db.models.functions import Length
 # Create your views here.
 def insert_emp(request):
     eno = int(input('Enter employee number: '))
@@ -43,6 +45,12 @@ def empToDeptJoin(request):
     QLEDO = Emp.objects.select_related('deptno').filter(deptno__dname = 'RESEARCH')
     QLEDO = Emp.objects.select_related('deptno').filter(deptno__loc = 'DALLAS')
     QLEDO = Emp.objects.select_related('deptno').filter(deptno__deptno = 20)
+    
+    avgsal = Emp.objects.aggregate(agsal = Avg('sal'))['agsal']
+    print(avgsal)
+    QLEDO = Emp.objects.select_related('deptno').filter(sal__gt = avgsal)
+    QLEDO = Emp.objects.annotate(loe = Length('ename')).filter(loe = 5)
+    
     d = {'QLEDO':QLEDO}
     return render(request,'empToDeptJoin.html',d)  
 
@@ -135,5 +143,6 @@ def EmpToDeptByPR(request):
     QLDO = Dept.objects.all().prefetch_related('emp_set')
     QLDO = Dept.objects.prefetch_related('emp_set').filter(dname__startswith = 'S')
     QLDO = Dept.objects.prefetch_related(Prefetch('emp_set', queryset=Emp.objects.filter(job = 'SALESMAN')))
+    
     d = {'QLDO':QLDO}
     return render(request,'EmpToDeptByPR.html',d)
