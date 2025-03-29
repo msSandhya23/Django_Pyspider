@@ -146,3 +146,4 @@ def EmpToDeptByPR(request):
     
     d = {'QLDO':QLDO}
     return render(request,'EmpToDeptByPR.html',d)
+
