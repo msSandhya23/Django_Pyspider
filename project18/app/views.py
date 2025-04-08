@@ -92,3 +92,24 @@ def delete_webpage(request):
     
     d1 = {'QLWO':QLWO}
     return render(request,'display_webpages.html',d1)
+
+def insert_webpage_by_forms(request):
+    LTO = Topic.objects.all()
+    d = {'LTO':LTO}
+    if request.method == 'POST':
+        tn = request.POST.get('tn')
+        TO = Topic.objects.get(topic_name = tn)
+        na = request.POST['na']
+        ur = request.POST['ur']
+        em = request.POST['em']
+        WO =Webpage.objects.get_or_create(topic_name = TO,name = na,url = ur,email = em)
+        created = Topic.objects.get_or_create(topic_name=tn)
+        if WO[1]:
+            return HttpResponse(f'{na} is created')
+        else:
+            return HttpResponse(f'{na} is not created')
+        QLWO = Webpage.objects.all()
+        
+        d1 = {'QLWO':QLWO}
+        return render(request,'display_webpages.html',d1)
+    return render(request,'insert_webpage_by_forms.html',d)

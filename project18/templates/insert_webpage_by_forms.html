@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>insert_webpage_by_forms</h1>
+        <select name="tn" id="tn">
+            {% for TO in LTO %}
+                <option value="{{TO.topic_name}}">{{TO.topic_name}}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <form  method="POST">
+            {% csrf_token %}
+            <br>
+            <label for="tn">Topic Name</label>
+            <input type="text" name="tn">
+            <br><br>
+            <label for="na">Name</label>
+            <input type="text" name="na" id="na">
+            <br><br>
+            <label for="ur">URL</label>
+            <input type="url" name="ur" id="ur">
+            <br><br>
+            <label for="em">Email</label>
+            <input type="email" name="em" id="em">
+            <br><br>
+            <input type="Submit" >
+        </form>
+    </center>
+</body>
+</html>

@@ -26,4 +26,5 @@ urlpatterns = [
     path("insert_AccessRecord/",insert_AccessRecord,name='insert_AccessRecord'),
     #path("TopicToWebpageByPR/",TopicToWebpageByPR,name="TopicToWebpageByPR/"),
     path("update_webpage/",update_webpage,name="update_webpage"),
+    path("insert_webpage_by_forms/",insert_webpage_by_forms,name="insert_webpage_by_forms"),
 ]
