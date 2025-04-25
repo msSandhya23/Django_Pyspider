@@ -15,7 +15,7 @@ def registration(request):
             MUFDO = NMUFDO.save(commit = False)
             pw = NMUFDO.cleaned_data['password']
             MUFDO.set_password(pw)
-            
+            MUFDO.save()
             MPFDO = NMPFDO.save(commit = False)
             MPFDO.username = MUFDO
             MPFDO.save()
