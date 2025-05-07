@@ -77,6 +77,7 @@ WSGI_APPLICATION = "project29.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+    # !for SQL
     "default": {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "school",
@@ -85,6 +86,16 @@ DATABASES = {
         "HOST" : "localhost",
         "PORT": 3306
     }
+    
+    # !for PostgreSQL
+    # "default": {
+    #     "ENGINE": "django.db.backends.postgresql",
+    #     "NAME": "school",
+    #     "USER": "postgres",
+    #     "PASSWORD": "Root",
+    #     "HOST" : "localhost",
+    #     "PORT": 5432
+    # }
 }
 
 
