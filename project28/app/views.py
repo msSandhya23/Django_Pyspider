@@ -51,14 +51,7 @@ def registration(request):
             # Plain text version for email clients that don't support HTML
             plain_message = strip_tags(html_message)
             
-            send_mail(
-                subject='Welcome to Our Platform!',
-                message=plain_message,
-                html_message=html_message,
-                from_email='sandhyabehera33090@gmail.com',
-                recipient_list=[MUFDO.email],
-                fail_silently=False
-            )
+           
             
             return HttpResponse("Registration successful!")
     
