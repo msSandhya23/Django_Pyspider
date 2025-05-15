@@ -7,5 +7,6 @@ class School(models.Model):
     scprinciple = models.CharField(max_length=100)
     
 class Student(models.Model):
-    scname = models.ForeignKey()
+    scname = models.ForeignKey(School,on_delete=models.CASCADE,related_name='Student')
     stname = models.CharField(max_length=100)
+    stage = models.IntegerField()

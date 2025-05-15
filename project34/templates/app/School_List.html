@@ -1,0 +1,11 @@
+{% extends 'app/home.html' %}
+{% block body_block %}
+<h1>School Are : </h1>
+{% if School %}
+    {% for School in Schools %}
+        <a href="{{School.id}}">{{School}}</a>
+    {% endfor %}
+    {% else %}
+        <h1>No School Found</h1>
+{% endif %}
+{% endblock %}
